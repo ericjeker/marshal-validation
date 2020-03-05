@@ -16,7 +16,7 @@ describe('Page', () => {
 	expect(errors.length).toBe(1);
 	expect(errors[0]).toBeInstanceOf(ValidationError);
 	expect(errors[0].path).toBe('age');
-	expect(errors[0].message).toBe('Required value is undefined');
+	expect(errors[0].message).toBe('Required value is undefined or null');
 
   });
 
